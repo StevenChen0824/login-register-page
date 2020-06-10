@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login & Register Page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="hero">
+		<div class="card">
+			<div class="btn-area">
+				<div class="switch"></div>
+				<button type="button" class="main-btn" onclick="login()">Log In</button>
+				<button type="button" class="main-btn" onclick="register()">Register</button>
+			</div>
+			<div class="icon-area">
+				<button class="facebook">f</button>
+				<button class="google">G</button>
+			</div>
+			<div>
+				<form id="login" class="form-area">
+					<label for="userID"></label>
+					<input type="text" class="input_field" name="userID_login" placeholder="User ID" required>
+					<label for="password"></label>
+					<input type="password" class="input_field" name="password_login" placeholder="Enter Password" required>
+					<input type="checkbox" id="remember_password" class="checkbox" name="remember_password" >
+					<label for="remember_password" class="checkbox_note">remember my password</label>
+					<button type="submit" class="sub-btn">Log In</button>
+				</form>
+				<form id="register" class="form-area">
+					<label for="userID"></label>
+					<input type="text" class="input_field" name="userID_register" placeholder="User ID" required>
+					<label for="password"></label>
+					<input type="password" class="input_field" name="password_register" placeholder="Enter Password" required>
+					<label for="email"></label>
+					<input type="email" class="input_field" name="email" placeholder="Enter Email" required>
+					<input type="checkbox" id="agree_terms" class="checkbox" name="remember_password" required>
+					<label for="agree_terms" class="checkbox_note">I understand</label>
+					<button type="submit" class="sub-btn">Register</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
